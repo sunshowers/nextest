@@ -3,6 +3,9 @@
 
 #![allow(dead_code)]
 
+#[global_allocator]
+static GLOBAL: tcmalloc::TCMalloc = tcmalloc::TCMalloc;
+
 /// This is a doctest.
 ///
 /// ```

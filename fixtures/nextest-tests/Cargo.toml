@@ -23,8 +23,7 @@ test = true
 
 # Make this crate its own workspace.
 [workspace]
-members = [
-    "derive"
-]
+members = ["derive"]
 
 [dependencies]
+tcmalloc = { version = "0.3", features = ["bundled"] }
